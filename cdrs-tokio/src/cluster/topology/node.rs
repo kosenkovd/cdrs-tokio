@@ -301,7 +301,6 @@ impl<T: CdrsTransport, CM: ConnectionManager<T>> Node<T, CM> {
                 ?node_info.broadcast_rpc_address,
                 "Cloned the node with Down state",
             );
-            new_node_state = NodeState::Up;
         }
 
         Self {
